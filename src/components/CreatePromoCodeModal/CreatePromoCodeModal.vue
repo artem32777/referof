@@ -11,7 +11,7 @@ import {
 } from '@/components/CreatePromoCodeModal/types.ts'
 
 const isModalOpen = ref(false)
-const activeStep = ref(CreatePromoCodeStep.Settings)
+const activeStep = ref(CreatePromoCodeStep.General)
 const promoCodeData = ref<Partial<CreatePromoCodeForm>>({})
 </script>
 
