@@ -30,7 +30,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
         :aria-describedby="undefined"
         :class="
           cn(
-            'border-border bg-background relative z-50 my-8 grid w-full max-w-lg gap-4 border p-6 shadow-lg duration-200 sm:rounded-lg md:w-full',
+            'border-border bg-background relative z-50 my-8 grid max-w-[516px] gap-4 border p-6 shadow-lg duration-200 sm:rounded-lg md:w-full',
             props.class,
           )
         "

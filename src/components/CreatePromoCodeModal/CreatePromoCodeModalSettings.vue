@@ -27,9 +27,7 @@ const form = useForm({
     toTypedSchema(
       z.object({
         [CreatePromoCodeValues.startDate]: z.string().datetime({ offset: true }),
-        [CreatePromoCodeValues.endDate]: isEndDateDisabled.value
-          ? z.string().datetime({ offset: true }).optional()
-          : z.string().datetime({ offset: true }),
+        [CreatePromoCodeValues.endDate]: z.string().datetime({ offset: true }).optional(),
         [CreatePromoCodeValues.limit]: z.coerce
           .number({ message: 'Введите число' })
           .min(1, { message: 'Минимум одна активация' }),
