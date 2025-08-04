@@ -19,8 +19,8 @@ const emit = defineEmits<{
 const form = useForm({
   validationSchema: toTypedSchema(
     z.object({
-      [CreatePromoCodeValues.name]: z.string().max(30),
-      [CreatePromoCodeValues.title]: z.string().max(120),
+      [CreatePromoCodeValues.name]: z.string().min(1).max(30),
+      [CreatePromoCodeValues.title]: z.string().min(1).max(120),
       [CreatePromoCodeValues.text]: z.string().max(250).optional(),
       [CreatePromoCodeValues.points]: z.coerce
         .number({ message: 'Введите число' })
